@@ -12,13 +12,16 @@
     <link href="login.css" rel="stylesheet" />
   </head>
   <body>
-    <section>
+    <div class="d-flex justify-content-center my-5">
+      <h1>Welcome to JavaScript Zero to Hero</h1>
+    </div>
+    <section class="login_page">
       <div class="container">
         <div class="row">
           <div
-            class="col d-flex flex-column justify-content-center align-items-center"
+            class="col d-flex flex-column justify-content-center align-items-center login"
           >
-            <h1>Login</h1>
+            <h1 class="mb-3">Login</h1>
             <div class="input-group mb-3 w-50">
               <input
                 type="text"
@@ -38,10 +41,10 @@
               />
             </div>
             <button class="btn bg-primary w-25">Login</button>
-            <p>don't have an account? Sign Up</p>
+            <p class="mt-5">don't have an account? Sign Up</p>
           </div>
           <div class="col d-flex justify-content-center align-items-center">
-            <img src="./assets/login.png" />
+            <img class="login_img" src="./assets/login.png" />
           </div>
         </div>
       </div>

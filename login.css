@@ -7,3 +7,17 @@
 body {
   background-color: #222831;
 }
+.login_page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login {
+  width: 30%;
+  border: 0 solid rgb(147, 147, 147);
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 1px 4px;
+}
+.login_img {
+  width: 100%;
+}
