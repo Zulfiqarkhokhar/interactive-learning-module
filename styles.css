@@ -249,6 +249,7 @@ h1,
   color: #fff;
   font-size: 17px;
   margin-left: 20px;
+  margin-bottom: 16px;
 }
 
 .dashboard-nav-item {
@@ -281,9 +282,15 @@ h1,
   font-size: 14px;
   margin-left: -40px;
 }
+
 .dashboard-nav-item:hover {
   background: rgb(62, 188, 167);
   padding: 20px 20px 30px 70px;
+}
+
+.design .dashboard-nav-item:hover {
+  background: rgb(62, 188, 167);
+  padding: 10px 20px 10px 70px;
 }
 
 .active {
