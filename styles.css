@@ -1,10 +1,12 @@
 :root {
   --font-family-sans-serif: "Open Sans", -apple-system, BlinkMacSystemFont,
-  "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -23,8 +25,8 @@ nav {
 body {
   margin: 0;
   font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI",
-  Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -33,7 +35,12 @@ body {
   background-color: #e9edf4;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-top: 0;
   margin-bottom: 0.5rem;
 }
@@ -54,14 +61,26 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
   font-family: "Nunito", sans-serif;
   margin-bottom: 0.5rem;
   font-weight: 500;
   line-height: 1.2;
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 2.5rem;
   font-weight: normal;
 }
@@ -186,7 +205,6 @@ h1, .h1 {
   color: #fff;
 }
 
-
 .brand-logo {
   font-family: "Nunito", sans-serif;
   font-weight: bold;
@@ -202,7 +220,9 @@ h1, .h1 {
   align-items: center;
 }
 
-.brand-logo:focus, .brand-logo:active, .brand-logo:hover {
+.brand-logo:focus,
+.brand-logo:active,
+.brand-logo:hover {
   color: #dbdbdb;
   text-decoration: none;
 }
@@ -226,10 +246,9 @@ h1, .h1 {
 }
 
 .main-menu {
-color: #fff;
-font-size: 17px;
-margin-left: 20px;
-
+  color: #fff;
+  font-size: 17px;
+  margin-left: 20px;
 }
 
 .dashboard-nav-item {
@@ -264,7 +283,7 @@ margin-left: 20px;
 }
 .dashboard-nav-item:hover {
   background: rgb(62, 188, 167);
-  padding:  20px 20px 30px 70px;;
+  padding: 20px 20px 30px 70px;
 }
 
 .active {
@@ -368,7 +387,9 @@ margin-left: 20px;
   color: #a09d9d;
 }
 
-.menu-toggle:hover, .menu-toggle:active, .menu-toggle:focus {
+.menu-toggle:hover,
+.menu-toggle:active,
+.menu-toggle:focus {
   text-decoration: none;
   color: #a09d9d;
 }
@@ -400,57 +421,64 @@ margin-left: 20px;
   height: 1px;
   margin: 1rem 0;
   overflow: hidden;
-  background-color:  rgba(236, 238, 239, 0.3);
+  background-color: rgba(236, 238, 239, 0.3);
+}
+.tutorial_btn {
+  background-color: rgb(35, 168, 146);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
 }
 
 @media (min-width: 992px) {
   .dashboard-app {
-      margin-left: 238px;
+    margin-left: 238px;
   }
 
   .dashboard-compact .dashboard-app {
-      margin-left: 0;
+    margin-left: 0;
   }
 }
 
-
 @media (max-width: 768px) {
   .dashboard-content {
-      padding: 15px 0px;
+    padding: 15px 0px;
   }
 }
 
 @media (max-width: 992px) {
   .dashboard-nav {
-      display: none;
-      position: fixed;
-      top: 0;
-      right: 0;
-      left: 0;
-      bottom: 0;
-      z-index: 1070;
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 1070;
   }
 
   .dashboard-nav.mobile-show {
-      display: block;
+    display: block;
   }
 }
 
 @media (max-width: 992px) {
   .dashboard-nav header .menu-toggle {
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
 @media (min-width: 992px) {
   .dashboard-toolbar {
-      left: 238px;
+    left: 238px;
   }
 
   .dashboard-compact .dashboard-toolbar {
-      left: 0;
+    left: 0;
   }
 }
