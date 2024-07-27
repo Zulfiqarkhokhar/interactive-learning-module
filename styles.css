@@ -444,11 +444,7 @@ h1,
 
 .tutorial_btn {
   background-color: rgb(71, 186, 166);
-  color: white;
   font-weight: 600;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
 }
 
 .tutorial_btn:hover {
