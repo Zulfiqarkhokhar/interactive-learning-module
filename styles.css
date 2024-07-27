@@ -391,7 +391,7 @@ h1,
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  color: #a09d9d;
+  color: #c1c1c1;
 }
 
 .menu-toggle:hover,
@@ -405,9 +405,20 @@ h1,
   font-size: 20px;
 }
 
+
+.input-group-text {
+  background-color: rgb(71, 186, 166);
+  color: #fff;
+  padding: 10px;
+}
+
+.input-group-text:hover {
+  background-color: rgb(35, 168, 146);
+}
+
 .dashboard-toolbar {
   min-height: 84px;
-  background-color: #dfdfdf;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -430,13 +441,14 @@ h1,
   overflow: hidden;
   background-color: rgba(236, 238, 239, 0.3);
 }
+
 .tutorial_btn {
+  background-color: rgb(71, 186, 166);
+  font-weight: 600;
+}
+
+.tutorial_btn:hover {
   background-color: rgb(35, 168, 146);
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 5px;
-  padding: 10px;
 }
 
 @media (min-width: 992px) {
