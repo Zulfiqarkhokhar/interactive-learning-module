@@ -32,7 +32,7 @@ body {
   line-height: 1.5;
   color: #515151;
   text-align: left;
-  background-color: #e9edf4;
+  background-color: #f4f5f8;
 }
 
 h1,
@@ -84,7 +84,7 @@ h1,
   font-size: 2.5rem;
   font-weight: normal;
 }
-
+/* 
 .card {
   position: relative;
   display: -webkit-box;
@@ -110,16 +110,17 @@ h1,
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
-}
+} */
 
-.card-header {
+/* .card-header {
   padding: 0.75rem 1.25rem;
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125);
   text-align: center;
-}
+} */
 
+   /* dashboard */
 .dashboard {
   display: -webkit-box;
   display: -webkit-flex;
@@ -504,4 +505,87 @@ h1,
   .dashboard-compact .dashboard-toolbar {
     left: 0;
   }
+}
+
+
+  /* content */
+
+#content {
+  padding: 20px;
+  color: #000;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#content .card {
+  background-color: rgb(215, 242, 237);
+  border-radius: 20px;
+}
+
+#content .card-body {
+  padding: 10px 20px 10px 20px;
+  margin: 10px 20px 10px 40px;
+}
+
+.card-body #icon{
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.card-title .fa-book {
+  border:  15px solid #fff;
+  font-size: 26px;
+  font-weight: 600;
+  margin-right: 30px;
+  border-radius: 20%;
+}
+
+.card-title .fa-bullhorn {
+  border:  15px solid #fff; 
+  font-size: 26px;
+  font-weight: 600;
+  margin-right: 30px;
+  border-radius: 20%;
+}
+
+
+.card-title .fa-address-book{
+  border:  15px solid #fff;
+  font-size: 26px;
+  font-weight: 600;
+  margin-right: 30px;
+  border-radius: 20%;
+}
+
+
+
+.card-title .fa-medal {
+  border:  15px solid #fff;
+  font-size: 26px;
+  font-weight: 600;
+  margin-right: 30px;
+  border-radius: 20%;
+}
+
+
+.card-text {
+  font-size: 18px;
+  color: #515151;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 12px;
+}
+
+.card-footer {
+  background-color:  rgb(215, 242, 237);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.card-footer .fa-arrow-right {
+  font-size: 18px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  margin-left: 60px;
 }
