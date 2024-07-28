@@ -505,6 +505,9 @@ h1,
   color: #000;
   justify-content: space-between;
   align-items: center;
+  /* flex: auto 1 1; */
+  /* margin-left: 26rem; */
+  /* margin-right: 20px; */
 }
 
 #content .card {
@@ -563,7 +566,7 @@ h1,
   color: #515151;
   font-weight: 600;
   margin-top: 20px;
-  margin-left: 12px;
+  /* margin-left: 12px; */
 }
 
 .card-footer {
@@ -575,7 +578,76 @@ h1,
 
 .card-footer .fa-arrow-right {
   font-size: 18px;
-  margin-top: 30px;
+  margin-top: 20px;
   margin-bottom: 0px;
-  margin-left: 60px;
+  margin-left: 30px;
+  margin-right: 10px;
+}
+
+.heading {
+  display: flex;
+  font-weight: bold;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 16rem;
+  align-items: center;
+}
+
+#content .courses {
+  position: relative;
+  background-color: #fff;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+
+#content .courses .card {
+  padding: 5px;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+#content .courses .Enrolled h5{
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  margin: 10px;
+  margin-right: 20px;
+}
+
+.courses .Enrolled .view-btn {
+  color: rgb(71, 186, 166);
+  background: #d7f2ed;
+  border: 1px solid rgb(71, 186, 166);
+  font-weight: bold;;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+.courses-card .card {
+  display: flex;
+  background-color: #fff;
+  margin: 20px;
+  border-radius: 10%;
+}
+
+.courses-card .card img {
+  max-width: 100%;
+  border-radius: 2px;
+}
+
+#content .courses-card .card .card-body {
+  padding: 10px;
+  margin: 20px;
+}
+
+.courses-card .card .card-body .lead {
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.courses-card .card .card-body .card-title {
+  font-size: 22px;
+  font-weight: 600;
 }
