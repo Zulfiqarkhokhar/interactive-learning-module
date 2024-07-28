@@ -399,11 +399,11 @@ h1,
   font-size: 20px;
 }
 
-
 .input-group-text {
   background-color: rgb(71, 186, 166);
   color: #fff;
   padding: 10px;
+  cursor: pointer;
 }
 
 .input-group-text:hover {
@@ -440,10 +440,27 @@ h1,
   color: #fff;
   background-color: rgb(71, 186, 166);
   font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
 }
 
 .tutorial_btn:hover {
   background-color: rgb(35, 168, 146);
+}
+
+.explore {
+  background-color: rgb(71, 186, 166);
+  font-weight: 600;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px;
+}
+.explore:hover {
+  background-color: rgb(35, 168, 146);
+  text-decoration: none;
 }
 
 @media (min-width: 992px) {
