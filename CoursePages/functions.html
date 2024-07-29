@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Learning Module</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-color: #031e31;
+            color: white;
+            padding: 50px 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        .content-section h2 {
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .content-section p, .content-section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #2d2d2d; /* Darker background for code */
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-size: 1rem;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Dashboard -->
+
+    <div class="dashboard">
+      <div class="dashboard-nav">
+        <header>
+          <a href="#!" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </a>
+          <a href="#" class="brand-logo"
+            ><i class="fas fa-anchor"> </i> <span>Learning</span>
+          </a>
+        </header>
+        <nav class="dashboard-nav-list">
+          <div class="nav-item-divider"></div>
+          <div class="main-menu">Main Menu</div>
+          <a href="#" class="dashboard-nav-item active">
+            <i class="fas fa-home"></i>
+            My Progress
+          </a>
+
+          <a href="#" class="dashboard-nav-item">
+            <i class="fa-solid fa-book"></i>
+            Explore Courses
+          </a>
+
+          <a href="#" class="dashboard-nav-item">
+            <i class="fa fa-bullhorn"></i>
+            Explore WorkShops
+          </a>
+
+          <div class="nav-item-divider"></div>
+          <div class="design">
+            <a href="#" class="dashboard-nav-item">
+              <i class="fa-solid fa-circle"></i>
+              UI Design
+            </a>
+
+            <a href="#" class="dashboard-nav-item">
+              <i class="fa-solid fa-circle"></i>
+              UX Design
+            </a>
+          </div>
+
+          <div class="nav-item-divider"></div>
+          <a href="#" class="dashboard-nav-item">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+          </a>
+        </nav>
+      </div>
+      <div class="dashboard-app">
+        <div class="d-flex justify-content-between">
+          <header class="dashboard-toolbar d-flex justify-content-between">
+            <a href="#!" class="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="input-group mx-4 w-50">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon1"
+              />
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="tutorial_btn">
+                See Tutorial <i class="fas fa-tv mx-2"></i>
+              </button>
+            </div>
+          </header>
+        </div>
+        <!-- details -->
+        <div class="hero text-center">
+        <div class="container">
+            <h1>JavaScript Functions</h1>
+            <p class="lead">Learn about functions in JavaScript, including how to create and use them.</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <section id="introduction" class="content-section">
+            <h2>Introduction to Functions</h2>
+            <p>Functions are reusable blocks of code designed to perform a specific task. A function can take inputs, process them, and return an output. They help to organize code into manageable sections and reduce repetition.</p>
+        </section>
+        
+        <section id="function-declaration" class="content-section">
+            <h2>Function Declaration</h2>
+            <p>A function declaration defines a named function. This type of function can be called before it is defined, due to hoisting.</p>
+        </section>
+        
+        <section id="function-expression" class="content-section">
+            <h2>Function Expression</h2>
+            <p>A function expression creates a function that can be stored in a variable. Unlike function declarations, function expressions are not hoisted, and thus cannot be called before they are defined.</p>
+        </section>
+        
+        <section id="arrow-functions" class="content-section">
+            <h2>Arrow Functions</h2>
+            <p>Arrow functions provide a shorter syntax for writing functions. They are anonymous and do not have their own <code>this</code> context.</p>
+        </section>
+        
+        <section id="example" class="content-section">
+            <h2>Example</h2>
+            <p>Here’s an example demonstrating different types of functions:</p>
+            <pre><code class="language-javascript">
+// Function Declaration
+function greet(name) {
+    return "Hello, " + name + "!";
+}
+console.log(greet("Alice")); // Hello, Alice!
+
+// Function Expression
+const square = function(number) {
+    return number * number;
+};
+console.log(square(5)); // 25
+
+// Arrow Function
+const multiply = (a, b) => a * b;
+console.log(multiply(3, 4)); // 12
+
+// Function with Default Parameters
+function sayHello(name = "Stranger") {
+    return "Hello, " + name + "!";
+}
+console.log(sayHello()); // Hello, Stranger!
+console.log(sayHello("Bob")); // Hello, Bob!
+
+// IIFE (Immediately Invoked Function Expression)
+(function() {
+    console.log("IIFE executed");
+})();
+            </code></pre>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Prism.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            document.getElementById("myText").innerHTML = "Button Clicked!";
+        });
+    </script>
+    <script src="../script.js"></script>
+  </body>
+</html>
