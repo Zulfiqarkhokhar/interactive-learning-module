@@ -110,7 +110,8 @@ h1,
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   padding: 1.25rem;
-} */
+}
+*/
 
 
    /* dashboard */
@@ -514,8 +515,7 @@ h1,
   }
 }
 
-
-  /* content */
+/* content */
 
 #content {
   padding: 20px;
@@ -523,7 +523,7 @@ h1,
   justify-content: space-between;
   align-items: center;
   /* flex: auto 1 1; */
-  margin-left: 26rem;
+  /* margin-left: 26rem; */
   /* margin-right: 20px; */
 }
 
@@ -537,13 +537,13 @@ h1,
   margin: 10px 20px 10px 40px;
 }
 
-.card-body #icon{
+.card-body #icon {
   font-size: 30px;
   font-weight: 700;
 }
 
 .card-title .fa-book {
-  border:  15px solid #fff;
+  border: 15px solid #fff;
   font-size: 26px;
   font-weight: 600;
   margin-right: 30px;
@@ -551,32 +551,28 @@ h1,
 }
 
 .card-title .fa-bullhorn {
-  border:  15px solid #fff; 
+  border: 15px solid #fff;
   font-size: 26px;
   font-weight: 600;
   margin-right: 30px;
   border-radius: 20%;
 }
 
-
-.card-title .fa-address-book{
-  border:  15px solid #fff;
+.card-title .fa-address-book {
+  border: 15px solid #fff;
   font-size: 26px;
   font-weight: 600;
   margin-right: 30px;
   border-radius: 20%;
 }
-
-
 
 .card-title .fa-medal {
-  border:  15px solid #fff;
+  border: 15px solid #fff;
   font-size: 26px;
   font-weight: 600;
   margin-right: 30px;
   border-radius: 20%;
 }
-
 
 .card-text {
   font-size: 18px;
@@ -587,7 +583,7 @@ h1,
 }
 
 .card-footer {
-  background-color:  rgb(215, 242, 237);
+  background-color: rgb(215, 242, 237);
   padding: 10px;
   font-size: 16px;
   font-weight: bold;
@@ -610,7 +606,6 @@ h1,
   align-items: center;
 }
 
-/* Base styles */
 #content .courses {
   position: relative;
   background-color: #fff;
@@ -643,11 +638,6 @@ h1,
   margin: 10px;
 }
 
-.courses .Enrolled .view-btn:hover {
-  background-color: rgb(71, 186, 166);
-  color: #d7f2ed;;
-}
-
 .courses-card .card {
   display: flex;
   background-color: #fff;
@@ -673,168 +663,4 @@ h1,
 .courses-card .card .card-body .card-title {
   font-size: 22px;
   font-weight: 600;
-  margin-bottom: 20px;
-}
-
-.courses-card .card .card-body .btn {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 500;
-  margin-left: 24px;
-  text-decoration: none;
-  background-color: rgb(71, 186, 166);
-  border: 2px solid rgb(35, 168, 146);
-}
-
-
-.courses-card .card .card-body .btn:hover {
-  background-color: rgb(35, 168, 146);
-}
-
-
-/* Responsive styles */
-
-@media (max-width: 1860px) {
-  #content .content1,
-  #content .content2,
-  #content .content3 {
-    margin-left: 20rem;
-  }
-}
-
-@media (max-width: 1400px) { 
-  #content {
-    margin-left: 26rem;
-  }
-}
-
-@media (max-width: 1200px) {
-
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 800px;
-  }
-  /* #content {
-    margin-left: 38rem;
-  } */
-
-  #content .courses {
-    margin: 15px;
-    padding: 15px;
-  }
-  
-  .courses-card .card {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .courses-card .card .card-body {
-    margin: 10px;
-    padding: 10px;
-  }
-}
-
-@media (max-width: 992px) {
-  /* #content {
-    margin-left: 34rem;
-  } */
-
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container {
-    max-width: 800px;
-  }
-  
-  #content .courses {
-    margin: 10px;
-    padding: 10px;
-  }
-  
-  .courses-card .card {
-    margin: 15px;
-    border-radius: 5%;
-  }
-  
-  .courses-card .card .card-body .card-title {
-    font-size: 20px;
-  }
-  
-  .courses-card .card .card-body .lead {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 768px) {
-
-  #content {
-    margin-left: 5rem;
-  }
-
-  #content .courses {
-    margin: 5px;
-    padding: 5px;
-  }
-  
-  .courses-card .card {
-    margin: 10px;
-  }
-  
-  .courses-card .card .card-body .card-title {
-    font-size: 18px;
-  }
-  
-  .courses-card .card .card-body .lead {
-    font-size: 14px;
-  }
-  
-  .courses .Enrolled .view-btn {
-    font-size: 14px;
-    padding: 8px 12px;
-    margin: 8px;
-  }
-}
-
-@media (max-width: 576px) {
-  #content {
-    margin-left: 0;
-    padding: 10px;
-  }
-    
-  .courses-card .card {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  
-  .courses-card .card img {
-    width: 100%;
-    height: auto;
-  }
-  
-  .courses-card .card .card-body {
-    margin: 5px;
-    padding: 5px;
-  }
-  
-  .courses-card .card .card-body .card-title {
-    font-size: 16px;
-  }
-  
-  .courses-card .card .card-body .lead {
-    font-size: 12px;
-  }
-  
-  .courses-card .card .card-body .btn {
-    font-size: 16px;
-    margin-left: 0;
-    padding: 8px 12px;
-  }
-  
-  .courses .Enrolled .view-btn {
-    font-size: 12px;
-    padding: 6px 10px;
-    margin: 6px;
-  }
 }
