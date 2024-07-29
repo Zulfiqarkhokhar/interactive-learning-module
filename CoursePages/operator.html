@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Learning Module</title>
+    <link href="../bootstrap.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/themes/prism-tomorrow.min.css"
+      rel="stylesheet"
+    />
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .hero {
+            background-color: #031e31;
+            color: white;
+            padding: 50px 0;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .content-section {
+            margin-bottom: 40px;
+        }
+        .content-section h2 {
+            border-bottom: 2px solid #343a40;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .content-section p, .content-section ul {
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+        pre {
+            background-color: #2d2d2d; /* Darker background for code */
+            padding: 15px;
+            border-radius: 5px;
+            overflow-x: auto;
+        }
+        code {
+            font-size: 1rem;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Dashboard -->
+
+    <div class="dashboard">
+      <div class="dashboard-nav">
+        <header>
+          <a href="#!" class="menu-toggle">
+            <i class="fas fa-bars"></i>
+          </a>
+          <a href="#" class="brand-logo"
+            ><i class="fas fa-anchor"> </i> <span>Learning</span>
+          </a>
+        </header>
+        <nav class="dashboard-nav-list">
+          <div class="nav-item-divider"></div>
+          <div class="main-menu">Main Menu</div>
+          <a href="#" class="dashboard-nav-item active">
+            <i class="fas fa-home"></i>
+            My Progress
+          </a>
+
+          <a href="#" class="dashboard-nav-item">
+            <i class="fa-solid fa-book"></i>
+            Explore Courses
+          </a>
+
+          <a href="#" class="dashboard-nav-item">
+            <i class="fa fa-bullhorn"></i>
+            Explore WorkShops
+          </a>
+
+          <div class="nav-item-divider"></div>
+          <div class="design">
+            <a href="#" class="dashboard-nav-item">
+              <i class="fa-solid fa-circle"></i>
+              UI Design
+            </a>
+
+            <a href="#" class="dashboard-nav-item">
+              <i class="fa-solid fa-circle"></i>
+              UX Design
+            </a>
+          </div>
+
+          <div class="nav-item-divider"></div>
+          <a href="#" class="dashboard-nav-item">
+            <i class="fas fa-sign-out-alt"></i>
+            Logout
+          </a>
+        </nav>
+      </div>
+      <div class="dashboard-app">
+        <div class="d-flex justify-content-between">
+          <header class="dashboard-toolbar d-flex justify-content-between">
+            <a href="#!" class="menu-toggle">
+              <i class="fas fa-bars"></i>
+            </a>
+            <div class="input-group mx-4 w-50">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Search"
+                aria-label="Search"
+                aria-describedby="basic-addon1"
+              />
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fas fa-search"></i
+              ></span>
+            </div>
+            <div class="d-flex justify-content-end">
+              <button class="tutorial_btn">
+                See Tutorial <i class="fas fa-tv mx-2"></i>
+              </button>
+            </div>
+          </header>
+        </div>
+        <!-- details -->
+        <div class="hero text-center">
+        <div class="container">
+            <h1>JavaScript Operators</h1>
+            <p class="lead">Learn about the various operators available in JavaScript.</p>
+        </div>
+    </div>
+
+    <div class="container my-5">
+        <section id="arithmetic-operators" class="content-section">
+            <h2>Arithmetic Operators</h2>
+            <p>Arithmetic operators are used to perform arithmetic on numbers.</p>
+            <ul>
+                <li><strong>Addition (+):</strong> Adds two numbers, e.g., <code>5 + 2</code> results in <code>7</code>.</li>
+                <li><strong>Subtraction (−):</strong> Subtracts the second number from the first, e.g., <code>5 - 2</code> results in <code>3</code>.</li>
+                <li><strong>Multiplication (*):</strong> Multiplies two numbers, e.g., <code>5 * 2</code> results in <code>10</code>.</li>
+                <li><strong>Division (/):</strong> Divides the first number by the second, e.g., <code>10 / 2</code> results in <code>5</code>.</li>
+                <li><strong>Modulus (%):</strong> Returns the remainder of a division, e.g., <code>10 % 3</code> results in <code>1</code>.</li>
+                <li><strong>Increment (++):</strong> Increases a variable by 1, e.g., <code>i++</code>.</li>
+                <li><strong>Decrement (−−):</strong> Decreases a variable by 1, e.g., <code>i--</code>.</li>
+            </ul>
+        </section>
+        
+        <section id="assignment-operators" class="content-section">
+            <h2>Assignment Operators</h2>
+            <p>Assignment operators assign values to variables.</p>
+            <ul>
+                <li><strong>Assignment (=):</strong> Assigns a value to a variable, e.g., <code>x = 10</code>.</li>
+                <li><strong>Addition assignment (+=):</strong> Adds a value to a variable, e.g., <code>x += 5</code> is equivalent to <code>x = x + 5</code>.</li>
+                <li><strong>Subtraction assignment (-=):</strong> Subtracts a value from a variable, e.g., <code>x -= 5</code> is equivalent to <code>x = x - 5</code>.</li>
+                <li><strong>Multiplication assignment (*=):</strong> Multiplies a variable by a value, e.g., <code>x *= 5</code> is equivalent to <code>x = x * 5</code>.</li>
+                <li><strong>Division assignment (/=):</strong> Divides a variable by a value, e.g., <code>x /= 5</code> is equivalent to <code>x = x / 5</code>.</li>
+                <li><strong>Modulus assignment (%=):</strong> Assigns the remainder of the division to a variable, e.g., <code>x %= 5</code> is equivalent to <code>x = x % 5</code>.</li>
+            </ul>
+        </section>
+        
+        <section id="comparison-operators" class="content-section">
+            <h2>Comparison Operators</h2>
+            <p>Comparison operators compare two values and return a boolean result.</p>
+            <ul>
+                <li><strong>Equal to (==):</strong> Checks if two values are equal, e.g., <code>5 == '5'</code> results in <code>true</code>.</li>
+                <li><strong>Equal value and type (===):</strong> Checks if two values and types are equal, e.g., <code>5 === '5'</code> results in <code>false</code>.</li>
+                <li><strong>Not equal (!=):</strong> Checks if two values are not equal, e.g., <code>5 != '5'</code> results in <code>false</code>.</li>
+                <li><strong>Not equal value or type (!==):</strong> Checks if two values and types are not equal, e.g., <code>5 !== '5'</code> results in <code>true</code>.</li>
+                <li><strong>Greater than (>):</strong> Checks if the first value is greater than the second, e.g., <code>10 > 5</code> results in <code>true</code>.</li>
+                <li><strong>Less than (<):</strong> Checks if the first value is less than the second, e.g., <code>5 < 10</code> results in <code>true</code>.</li>
+                <li><strong>Greater than or equal to (>=):</strong> Checks if the first value is greater than or equal to the second, e.g., <code>10 >= 10</code> results in <code>true</code>.</li>
+                <li><strong>Less than or equal to (<=):</strong> Checks if the first value is less than or equal to the second, e.g., <code>5 <= 10</code> results in <code>true</code>.</li>
+            </ul>
+        </section>
+        
+        <section id="logical-operators" class="content-section">
+            <h2>Logical Operators</h2>
+            <p>Logical operators are used to combine multiple conditions.</p>
+            <ul>
+                <li><strong>Logical AND (&&):</strong> Returns true if both conditions are true, e.g., <code>true && false</code> results in <code>false</code>.</li>
+                <li><strong>Logical OR (||):</strong> Returns true if at least one condition is true, e.g., <code>true || false</code> results in <code>true</code>.</li>
+                <li><strong>Logical NOT (!):</strong> Reverses the boolean value, e.g., <code>!true</code> results in <code>false</code>.</li>
+            </ul>
+        </section>
+        
+        <section id="example" class="content-section">
+            <h2>Example</h2>
+            <p>Here’s an example demonstrating the use of different operators:</p>
+            <pre><code class="language-javascript">
+// Arithmetic operators
+let x = 10;
+let y = 5;
+console.log(x + y); // 15
+console.log(x - y); // 5
+console.log(x * y); // 50
+console.log(x / y); // 2
+console.log(x % y); // 0
+
+// Assignment operators
+let a = 10;
+a += 5;
+console.log(a); // 15
+
+// Comparison operators
+console.log(10 == "10"); // true
+console.log(10 === "10"); // false
+console.log(10 != "10"); // false
+console.log(10 !== "10"); // true
+
+// Logical operators
+let condition1 = true;
+let condition2 = false;
+console.log(condition1 && condition2); // false
+console.log(condition1 || condition2); // true
+console.log(!condition1); // false
+            </code></pre>
+        </section>
+    </div>
+
+    <!-- Bootstrap JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Prism.js JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
+    <script>
+        document.getElementById("myButton").addEventListener("click", function() {
+            document.getElementById("myText").innerHTML = "Button Clicked!";
+        });
+    </script>
+    <script src="../script.js"></script>
+  </body>
+</html>
