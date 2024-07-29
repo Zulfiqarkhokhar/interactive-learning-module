@@ -129,55 +129,61 @@
         <!-- details -->
         <div class="hero text-center">
         <div class="container">
-            <h1>Introduction to JavaScript</h1>
-            <p class="lead">Learn the basics of JavaScript, the versatile language of the web.</p>
+            <h1>Variables and Data Types in JavaScript</h1>
+            <p class="lead">Learn how to declare and use variables, and understand different data types in JavaScript.</p>
         </div>
     </div>
 
     <div class="container my-5">
-        <section id="what-is-js" class="content-section">
-            <h2>What is JavaScript?</h2>
-            <p>JavaScript is a versatile, high-level, interpreted programming language that plays a crucial role in web development. It enables the creation of interactive and dynamic content, making web pages more engaging for users. JavaScript is often used alongside HTML and CSS, where HTML structures the content, CSS styles it, and JavaScript adds behavior.</p>
+        <section id="variables" class="content-section">
+            <h2>Variables</h2>
+            <p>In JavaScript, variables are used to store data values. You can create a variable using the <code>var</code>, <code>let</code>, or <code>const</code> keywords. Variables declared with <code>var</code> can have their value reassigned and are function-scoped, while <code>let</code> and <code>const</code> are block-scoped. The difference between <code>let</code> and <code>const</code> is that the value of a <code>const</code> variable cannot be changed once it's set.</p>
         </section>
         
-        <section id="history" class="content-section">
-            <h2>History and Evolution</h2>
-            <p>JavaScript was developed by Brendan Eich in 1995 at Netscape Communications. Initially called Mocha, it was later renamed to JavaScript to align with the popularity of Java at the time. Despite the name similarity, Java and JavaScript are distinct languages with different purposes. JavaScript's standardization is governed by the ECMAScript specification, with ES6 (ECMAScript 2015) marking a significant update with new features like classes, modules, and arrow functions.</p>
-        </section>
-        
-        <section id="features" class="content-section">
-            <h2>Key Features of JavaScript</h2>
+        <section id="data-types" class="content-section">
+            <h2>Data Types</h2>
+            <p>JavaScript supports several data types, divided into two categories: primitive and reference types.</p>
+            <h3>Primitive Data Types</h3>
             <ul>
-                <li><strong>Interpreted Language:</strong> JavaScript is executed in real-time by browsers, without the need for prior compilation.</li>
-                <li><strong>Client-Side Execution:</strong> Traditionally run on the client side, JavaScript can now also be used on servers thanks to Node.js.</li>
-                <li><strong>Dynamic Typing:</strong> Variables can hold values of any type without explicit declaration.</li>
-                <li><strong>Event-Driven:</strong> JavaScript can respond to user interactions and events, making it ideal for interactive user interfaces.</li>
-                <li><strong>Object-Oriented and Functional:</strong> JavaScript supports both programming paradigms, allowing flexibility in how code is structured and written.</li>
+                <li><strong>String:</strong> Represents text, e.g., <code>"Hello, world!"</code></li>
+                <li><strong>Number:</strong> Represents both integer and floating-point numbers, e.g., <code>42</code> or <code>3.14</code></li>
+                <li><strong>Boolean:</strong> Represents true or false values</li>
+                <li><strong>Undefined:</strong> A variable without a value</li>
+                <li><strong>Null:</strong> Represents the intentional absence of any value</li>
+                <li><strong>Symbol:</strong> A unique and immutable primitive value, often used as object keys</li>
+                <li><strong>BigInt:</strong> Represents integers with arbitrary precision, useful for large numbers</li>
             </ul>
-        </section>
-        
-        <section id="applications" class="content-section">
-            <h2>Applications of JavaScript</h2>
-            <ul>
-                <li>Web Development: Adding interactivity and dynamic elements to websites.</li>
-                <li>Mobile App Development: Using frameworks like React Native for cross-platform mobile applications.</li>
-                <li>Server-Side Development: With Node.js, JavaScript can create server-side applications and APIs.</li>
-                <li>Game Development: Browser-based games using HTML5, WebGL, and JavaScript.</li>
-                <li>Machine Learning and AI: Libraries like TensorFlow.js enable machine learning in the browser.</li>
-            </ul>
+            <h3>Reference Data Types</h3>
+            <p>Reference data types include Objects, Arrays, and Functions. These types are mutable and are accessed by reference.</p>
         </section>
         
         <section id="example" class="content-section">
             <h2>Example</h2>
-            <p>Here’s a simple example of JavaScript in action:</p>
+            <p>Here’s an example demonstrating the declaration of different variables and data types:</p>
             <pre><code class="language-javascript">
-// This example demonstrates basic DOM manipulation using JavaScript
-document.getElementById("myButton").addEventListener("click", function() {
-    document.getElementById("myText").innerHTML = "Button Clicked!";
-});
+// Declare variables using var, let, and const
+var name = "Alice";        // String
+let age = 30;              // Number
+const isStudent = true;    // Boolean
+
+// Declare undefined and null variables
+let undefinedVar;          // Undefined
+let nullVar = null;        // Null
+
+// Declare a BigInt
+let bigIntVar = BigInt(9007199254740991);
+
+// Reference data types
+let hobbies = ["Reading", "Gaming", "Coding"]; // Array
+let person = {                                  // Object
+    firstName: "John",
+    lastName: "Doe",
+    age: 25
+};
+let greet = function() {                        // Function
+    console.log("Hello, world!");
+};
             </code></pre>
-            <button id="myButton" class="btn btn-primary mt-3">Click Me</button>
-            <p id="myText" class="mt-2"></p>
         </section>
     </div>
 
