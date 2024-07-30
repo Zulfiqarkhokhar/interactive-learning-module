@@ -451,6 +451,12 @@ h1,
   background-color: rgb(35, 168, 146);
 }
 
+.card-body #cards-btn  {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
 .explore {
   background-color: rgb(71, 186, 166);
   font-weight: 600;
@@ -458,8 +464,13 @@ h1,
   border: none;
   border-radius: 5px;
   padding: 8px;
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
 .explore:hover {
+  color: #fff;
   background-color: rgb(35, 168, 146);
   text-decoration: none;
 }
@@ -536,6 +547,8 @@ h1,
   padding: 10px 20px 10px 20px;
   margin: 10px 20px 10px 40px;
 }
+
+
 
 .card-body #icon {
   font-size: 30px;
