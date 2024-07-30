@@ -129,90 +129,80 @@
         <!-- details -->
         <div class="hero text-center">
         <div class="container">
-            <h1>JavaScript Control Structures</h1>
-            <p class="lead">Explore the various control structures in JavaScript, such as conditionals and loops.</p>
+            <h1>JavaScript Objects and Arrays</h1>
+            <p class="lead">Learn about JavaScript objects and arrays, two fundamental data structures in the language.</p>
         </div>
     </div>
 
     <div class="container my-5">
-        <section id="if-else" class="content-section">
-            <h2>If-Else Statements</h2>
-            <p>If-else statements are used to perform different actions based on different conditions. The <code>if</code> block is executed if the condition is true; otherwise, the <code>else</code> block is executed.</p>
+        <section id="objects" class="content-section">
+            <h2>Objects</h2>
+            <p>Objects are collections of key-value pairs, where each key is a string (also called a property), and the value can be of any type. They are used to store related data and functions (methods) together.</p>
         </section>
         
-        <section id="switch" class="content-section">
-            <h2>Switch Statements</h2>
-            <p>The <code>switch</code> statement is used to perform different actions based on different conditions. It's a more readable alternative to multiple <code>if-else</code> statements.</p>
+        <section id="creating-objects" class="content-section">
+            <h2>Creating Objects</h2>
+            <p>There are several ways to create objects in JavaScript, including using object literals and constructors.</p>
         </section>
         
-        <section id="loops" class="content-section">
-            <h2>Loops</h2>
-            <p>Loops are used to repeat a block of code multiple times. JavaScript provides several types of loops:</p>
-            <ul>
-                <li><strong>For Loop:</strong> Repeats a block of code a known number of times.</li>
-                <li><strong>While Loop:</strong> Repeats a block of code as long as a specified condition is true.</li>
-                <li><strong>Do-While Loop:</strong> Similar to the while loop, but it executes the block of code at least once before checking the condition.</li>
-                <li><strong>For-In Loop:</strong> Iterates over the properties of an object.</li>
-                <li><strong>For-Of Loop:</strong> Iterates over iterable objects like arrays, strings, maps, etc.</li>
-            </ul>
+        <section id="accessing-properties" class="content-section">
+            <h2>Accessing and Modifying Properties</h2>
+            <p>Properties of an object can be accessed and modified using dot notation or bracket notation.</p>
+        </section>
+        
+        <section id="arrays" class="content-section">
+            <h2>Arrays</h2>
+            <p>Arrays are ordered collections of values, which can be of any type. Each value in an array is called an element, and each element has a numbered position, known as its index.</p>
+        </section>
+        
+        <section id="array-methods" class="content-section">
+            <h2>Common Array Methods</h2>
+            <p>Arrays come with various built-in methods for common tasks such as adding, removing, and iterating over elements.</p>
         </section>
         
         <section id="example" class="content-section">
             <h2>Example</h2>
-            <p>Here’s an example demonstrating the use of different control structures:</p>
+            <p>Here’s an example demonstrating the use of objects and arrays:</p>
             <pre><code class="language-javascript">
-// If-Else Statement
-let num = 10;
-if (num > 0) {
-    console.log("Positive number");
-} else {
-    console.log("Non-positive number");
-}
+// Creating an Object
+let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        return "Hello, " + this.name;
+    }
+};
+console.log(person.name); // John
+console.log(person.greet()); // Hello, John
 
-// Switch Statement
-let fruit = "apple";
-switch (fruit) {
-    case "banana":
-        console.log("Banana is yellow");
-        break;
-    case "apple":
-        console.log("Apple is red or green");
-        break;
-    default:
-        console.log("Unknown fruit");
-        break;
-}
+// Adding and Modifying Properties
+person.job = "Developer";
+person.age = 31;
+console.log(person.job); // Developer
+console.log(person.age); // 31
 
-// For Loop
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
+// Creating an Array
+let fruits = ["apple", "banana", "cherry"];
+console.log(fruits[0]); // apple
 
-// While Loop
-let count = 0;
-while (count < 3) {
-    console.log(count);
-    count++;
-}
+// Adding and Removing Elements
+fruits.push("orange"); // Add to end
+fruits.pop(); // Remove last element
+fruits.unshift("mango"); // Add to start
+fruits.shift(); // Remove first element
+console.log(fruits); // ["apple", "banana", "cherry"]
 
-// Do-While Loop
-let i = 0;
-do {
-    console.log(i);
-    i++;
-} while (i < 3);
+// Iterating Over Arrays
+fruits.forEach(function(fruit, index) {
+    console.log(index + ": " + fruit);
+});
 
-// For-In Loop
-let person = {name: "John", age: 30};
-for (let key in person) {
-    console.log(key + ": " + person[key]);
-}
-
-// For-Of Loop
-let colors = ["red", "green", "blue"];
-for (let color of colors) {
-    console.log(color);
-}
+// Array Methods
+let numbers = [1, 2, 3, 4, 5];
+let doubled = numbers.map(function(number) {
+    return number * 2;
+});
+console.log(doubled); // [2, 4, 6, 8, 10]
             </code></pre>
             <div class="d-flex justify-content-between">
             <a href="../index.html" class="btn explore">Back</a>

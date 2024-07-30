@@ -129,96 +129,69 @@
         <!-- details -->
         <div class="hero text-center">
         <div class="container">
-            <h1>JavaScript Control Structures</h1>
-            <p class="lead">Explore the various control structures in JavaScript, such as conditionals and loops.</p>
+            <h1>JavaScript ES6 Features</h1>
+            <p class="lead">Discover the powerful features introduced in ECMAScript 6 (ES6), also known as ECMAScript 2015.</p>
         </div>
     </div>
 
     <div class="container my-5">
-        <section id="if-else" class="content-section">
-            <h2>If-Else Statements</h2>
-            <p>If-else statements are used to perform different actions based on different conditions. The <code>if</code> block is executed if the condition is true; otherwise, the <code>else</code> block is executed.</p>
+        <section id="let-const" class="content-section">
+            <h2>let and const</h2>
+            <p>ES6 introduced two new ways to declare variables: <code>let</code> and <code>const</code>. Unlike <code>var</code>, these have block scope and help prevent common bugs related to variable hoisting and re-declaration.</p>
         </section>
         
-        <section id="switch" class="content-section">
-            <h2>Switch Statements</h2>
-            <p>The <code>switch</code> statement is used to perform different actions based on different conditions. It's a more readable alternative to multiple <code>if-else</code> statements.</p>
+        <section id="arrow-functions" class="content-section">
+            <h2>Arrow Functions</h2>
+            <p>Arrow functions provide a shorter syntax for writing functions and do not have their own <code>this</code>, making them useful in certain situations, such as callbacks or method definitions.</p>
         </section>
         
-        <section id="loops" class="content-section">
-            <h2>Loops</h2>
-            <p>Loops are used to repeat a block of code multiple times. JavaScript provides several types of loops:</p>
-            <ul>
-                <li><strong>For Loop:</strong> Repeats a block of code a known number of times.</li>
-                <li><strong>While Loop:</strong> Repeats a block of code as long as a specified condition is true.</li>
-                <li><strong>Do-While Loop:</strong> Similar to the while loop, but it executes the block of code at least once before checking the condition.</li>
-                <li><strong>For-In Loop:</strong> Iterates over the properties of an object.</li>
-                <li><strong>For-Of Loop:</strong> Iterates over iterable objects like arrays, strings, maps, etc.</li>
-            </ul>
+        <section id="template-literals" class="content-section">
+            <h2>Template Literals</h2>
+            <p>Template literals allow for multi-line strings and expression interpolation. They are defined using backticks (`) instead of quotes.</p>
+        </section>
+        
+        <section id="destructuring" class="content-section">
+            <h2>Destructuring</h2>
+            <p>Destructuring assignment allows you to unpack values from arrays or properties from objects into distinct variables.</p>
+        </section>
+        
+        <section id="modules" class="content-section">
+            <h2>Modules</h2>
+            <p>Modules in ES6 provide a way to organize and reuse code. They allow you to export and import variables, functions, classes, and objects across different files.</p>
         </section>
         
         <section id="example" class="content-section">
             <h2>Example</h2>
-            <p>Here’s an example demonstrating the use of different control structures:</p>
+            <p>Here’s an example demonstrating some ES6 features:</p>
             <pre><code class="language-javascript">
-// If-Else Statement
-let num = 10;
-if (num > 0) {
-    console.log("Positive number");
-} else {
-    console.log("Non-positive number");
-}
+// let and const
+let name = "John";
+const age = 30;
 
-// Switch Statement
-let fruit = "apple";
-switch (fruit) {
-    case "banana":
-        console.log("Banana is yellow");
-        break;
-    case "apple":
-        console.log("Apple is red or green");
-        break;
-    default:
-        console.log("Unknown fruit");
-        break;
-}
+// Arrow Functions
+const greet = () => console.log("Hello, " + name);
 
-// For Loop
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
+// Template Literals
+let message = `Name: ${name}, Age: ${age}`;
+console.log(message); // Name: John, Age: 30
 
-// While Loop
-let count = 0;
-while (count < 3) {
-    console.log(count);
-    count++;
-}
+// Destructuring
+let person = { firstName: "Jane", lastName: "Doe" };
+let { firstName, lastName } = person;
+console.log(firstName); // Jane
+console.log(lastName); // Doe
 
-// Do-While Loop
-let i = 0;
-do {
-    console.log(i);
-    i++;
-} while (i < 3);
-
-// For-In Loop
-let person = {name: "John", age: 30};
-for (let key in person) {
-    console.log(key + ": " + person[key]);
-}
-
-// For-Of Loop
-let colors = ["red", "green", "blue"];
-for (let color of colors) {
-    console.log(color);
-}
+// Modules (Assuming this is in a module file)
+// export const myFunction = () => console.log("Exported function");
+// import { myFunction } from './myModule';
+// myFunction();
             </code></pre>
             <div class="d-flex justify-content-between">
             <a href="../index.html" class="btn explore">Back</a>
             <a href="#" class="btn explore">Take Quiz</a></div>
         </section>
     </div>
+
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

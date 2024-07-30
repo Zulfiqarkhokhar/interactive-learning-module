@@ -129,90 +129,60 @@
         <!-- details -->
         <div class="hero text-center">
         <div class="container">
-            <h1>JavaScript Control Structures</h1>
-            <p class="lead">Explore the various control structures in JavaScript, such as conditionals and loops.</p>
+            <h1>JavaScript DOM Manipulation</h1>
+            <p class="lead">Learn how to manipulate the Document Object Model (DOM) using JavaScript.</p>
         </div>
     </div>
 
     <div class="container my-5">
-        <section id="if-else" class="content-section">
-            <h2>If-Else Statements</h2>
-            <p>If-else statements are used to perform different actions based on different conditions. The <code>if</code> block is executed if the condition is true; otherwise, the <code>else</code> block is executed.</p>
+        <section id="introduction" class="content-section">
+            <h2>Introduction to DOM</h2>
+            <p>The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. DOM manipulation refers to the act of changing the content or structure of a webpage using JavaScript.</p>
         </section>
         
-        <section id="switch" class="content-section">
-            <h2>Switch Statements</h2>
-            <p>The <code>switch</code> statement is used to perform different actions based on different conditions. It's a more readable alternative to multiple <code>if-else</code> statements.</p>
+        <section id="selecting-elements" class="content-section">
+            <h2>Selecting Elements</h2>
+            <p>To manipulate the DOM, you first need to select the elements you want to interact with. This can be done using methods like <code>getElementById</code>, <code>getElementsByClassName</code>, <code>getElementsByTagName</code>, and <code>querySelector</code>/<code>querySelectorAll</code>.</p>
         </section>
         
-        <section id="loops" class="content-section">
-            <h2>Loops</h2>
-            <p>Loops are used to repeat a block of code multiple times. JavaScript provides several types of loops:</p>
-            <ul>
-                <li><strong>For Loop:</strong> Repeats a block of code a known number of times.</li>
-                <li><strong>While Loop:</strong> Repeats a block of code as long as a specified condition is true.</li>
-                <li><strong>Do-While Loop:</strong> Similar to the while loop, but it executes the block of code at least once before checking the condition.</li>
-                <li><strong>For-In Loop:</strong> Iterates over the properties of an object.</li>
-                <li><strong>For-Of Loop:</strong> Iterates over iterable objects like arrays, strings, maps, etc.</li>
-            </ul>
+        <section id="changing-content" class="content-section">
+            <h2>Changing Content</h2>
+            <p>Once you have selected the elements, you can change their content using properties like <code>innerHTML</code>, <code>textContent</code>, or <code>innerText</code>.</p>
+        </section>
+        
+        <section id="changing-styles" class="content-section">
+            <h2>Changing Styles</h2>
+            <p>You can also change the appearance of elements by modifying their CSS styles using the <code>style</code> property or by adding/removing CSS classes using the <code>classList</code> property.</p>
         </section>
         
         <section id="example" class="content-section">
             <h2>Example</h2>
-            <p>Here’s an example demonstrating the use of different control structures:</p>
+            <p>Here’s an example demonstrating some basic DOM manipulation techniques:</p>
             <pre><code class="language-javascript">
-// If-Else Statement
-let num = 10;
-if (num > 0) {
-    console.log("Positive number");
-} else {
-    console.log("Non-positive number");
-}
+// Selecting an Element
+let titleElement = document.getElementById("title");
+console.log(titleElement.textContent); // Original Title
 
-// Switch Statement
-let fruit = "apple";
-switch (fruit) {
-    case "banana":
-        console.log("Banana is yellow");
-        break;
-    case "apple":
-        console.log("Apple is red or green");
-        break;
-    default:
-        console.log("Unknown fruit");
-        break;
-}
+// Changing Content
+titleElement.textContent = "Updated Title";
+console.log(titleElement.textContent); // Updated Title
 
-// For Loop
-for (let i = 0; i < 5; i++) {
-    console.log(i);
-}
+// Changing Styles
+titleElement.style.color = "blue";
+titleElement.style.fontSize = "2em";
 
-// While Loop
-let count = 0;
-while (count < 3) {
-    console.log(count);
-    count++;
-}
+// Adding and Removing Classes
+titleElement.classList.add("highlight");
+titleElement.classList.remove("highlight");
 
-// Do-While Loop
-let i = 0;
-do {
-    console.log(i);
-    i++;
-} while (i < 3);
+// Creating and Appending New Elements
+let newParagraph = document.createElement("p");
+newParagraph.textContent = "This is a new paragraph.";
+document.body.appendChild(newParagraph);
 
-// For-In Loop
-let person = {name: "John", age: 30};
-for (let key in person) {
-    console.log(key + ": " + person[key]);
-}
-
-// For-Of Loop
-let colors = ["red", "green", "blue"];
-for (let color of colors) {
-    console.log(color);
-}
+// Removing Elements
+let oldParagraph = document.getElementById("oldParagraph");
+oldParagraph.remove();
             </code></pre>
             <div class="d-flex justify-content-between">
             <a href="../index.html" class="btn explore">Back</a>

@@ -129,96 +129,78 @@
         <!-- details -->
         <div class="hero text-center">
         <div class="container">
-            <h1>JavaScript Control Structures</h1>
-            <p class="lead">Explore the various control structures in JavaScript, such as conditionals and loops.</p>
+            <h1>Asynchronous JavaScript</h1>
+            <p class="lead">Learn how to handle asynchronous operations in JavaScript using callbacks, promises, and async/await.</p>
         </div>
     </div>
 
     <div class="container my-5">
-        <section id="if-else" class="content-section">
-            <h2>If-Else Statements</h2>
-            <p>If-else statements are used to perform different actions based on different conditions. The <code>if</code> block is executed if the condition is true; otherwise, the <code>else</code> block is executed.</p>
+        <section id="introduction" class="content-section">
+            <h2>Introduction to Asynchronous JavaScript</h2>
+            <p>JavaScript is a single-threaded language, which means it can only execute one task at a time. However, it can handle asynchronous operations using various mechanisms, allowing it to perform tasks like fetching data from an API without blocking the main thread.</p>
         </section>
         
-        <section id="switch" class="content-section">
-            <h2>Switch Statements</h2>
-            <p>The <code>switch</code> statement is used to perform different actions based on different conditions. It's a more readable alternative to multiple <code>if-else</code> statements.</p>
+        <section id="callbacks" class="content-section">
+            <h2>Callbacks</h2>
+            <p>Callbacks are functions passed as arguments to other functions, which are invoked once an asynchronous operation is complete. They were the first way to handle asynchronous operations in JavaScript.</p>
         </section>
         
-        <section id="loops" class="content-section">
-            <h2>Loops</h2>
-            <p>Loops are used to repeat a block of code multiple times. JavaScript provides several types of loops:</p>
-            <ul>
-                <li><strong>For Loop:</strong> Repeats a block of code a known number of times.</li>
-                <li><strong>While Loop:</strong> Repeats a block of code as long as a specified condition is true.</li>
-                <li><strong>Do-While Loop:</strong> Similar to the while loop, but it executes the block of code at least once before checking the condition.</li>
-                <li><strong>For-In Loop:</strong> Iterates over the properties of an object.</li>
-                <li><strong>For-Of Loop:</strong> Iterates over iterable objects like arrays, strings, maps, etc.</li>
-            </ul>
+        <section id="promises" class="content-section">
+            <h2>Promises</h2>
+            <p>Promises provide a more powerful way to handle asynchronous operations. They represent a value that may be available now, or in the future, or never. A promise can be in one of three states: pending, fulfilled, or rejected.</p>
+        </section>
+        
+        <section id="async-await" class="content-section">
+            <h2>Async/Await</h2>
+            <p>Async/Await is syntactic sugar built on top of promises. It allows you to write asynchronous code in a more synchronous-like fashion, making it easier to read and maintain.</p>
         </section>
         
         <section id="example" class="content-section">
             <h2>Example</h2>
-            <p>Here’s an example demonstrating the use of different control structures:</p>
+            <p>Here’s an example demonstrating different ways to handle asynchronous operations in JavaScript:</p>
             <pre><code class="language-javascript">
-// If-Else Statement
-let num = 10;
-if (num > 0) {
-    console.log("Positive number");
-} else {
-    console.log("Non-positive number");
+// Callback
+function fetchDataCallback(url, callback) {
+    setTimeout(() => {
+        callback("Data from " + url);
+    }, 1000);
 }
 
-// Switch Statement
-let fruit = "apple";
-switch (fruit) {
-    case "banana":
-        console.log("Banana is yellow");
-        break;
-    case "apple":
-        console.log("Apple is red or green");
-        break;
-    default:
-        console.log("Unknown fruit");
-        break;
+fetchDataCallback("example.com", (data) => {
+    console.log(data);
+});
+
+// Promise
+function fetchDataPromise(url) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve("Data from " + url);
+        }, 1000);
+    });
 }
 
-// For Loop
-for (let i = 0; i < 5; i++) {
-    console.log(i);
+fetchDataPromise("example.com")
+    .then((data) => console.log(data))
+    .catch((error) => console.error(error));
+
+// Async/Await
+async function fetchDataAsync(url) {
+    try {
+        let data = await fetchDataPromise(url);
+        console.log(data);
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-// While Loop
-let count = 0;
-while (count < 3) {
-    console.log(count);
-    count++;
-}
-
-// Do-While Loop
-let i = 0;
-do {
-    console.log(i);
-    i++;
-} while (i < 3);
-
-// For-In Loop
-let person = {name: "John", age: 30};
-for (let key in person) {
-    console.log(key + ": " + person[key]);
-}
-
-// For-Of Loop
-let colors = ["red", "green", "blue"];
-for (let color of colors) {
-    console.log(color);
-}
+fetchDataAsync("example.com");
             </code></pre>
             <div class="d-flex justify-content-between">
             <a href="../index.html" class="btn explore">Back</a>
             <a href="#" class="btn explore">Take Quiz</a></div>
         </section>
     </div>
+
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
