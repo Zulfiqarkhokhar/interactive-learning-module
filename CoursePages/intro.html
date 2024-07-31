@@ -178,10 +178,16 @@ document.getElementById("myButton").addEventListener("click", function() {
             </code></pre>
             <div class="d-flex justify-content-between">
             <a href="../index.html" class="btn explore">Back</a>
-            <a href="#" class="btn explore">Take Quiz</a></div>
+            <button class="btn explore" id="quiz0">Take Quiz 1</button></div>
             <p id="myText" class="mt-2"></p>
         </section>
     </div>
+
+     <script>
+    document.getElementById('quiz0').addEventListener('click', function () {
+      window.location.href = '../quiz.html';
+    });
+  </script>
 
     <!-- Bootstrap JS, Popper.js, and jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
@@ -195,5 +201,6 @@ document.getElementById("myButton").addEventListener("click", function() {
         });
     </script>
     <script src="../script.js"></script>
+    <script type="module" src="../quiz.js"></script>
   </body>
 </html>
