@@ -742,3 +742,43 @@ h1,
     margin-right: 4px;
   }
 }
+
+/* Footer */
+footer {
+  margin-top: 20px;
+  background-color: #011726;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center; 
+  /* position: fixed; */
+  bottom: 0;
+  width: 100%;
+}
+
+footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+footer span,
+footer p {
+  margin: 0;
+  font-size: 16px;
+}
+
+footer p {
+  margin-left: 10px; 
+}
+
+@media (max-width: 576px) {
+  footer .container {
+      flex-direction: column;
+  }
+
+  footer p {
+      margin-left: 0;
+      margin-top: 10px;
+  }
+}
