@@ -16,37 +16,39 @@
         align-items: center;
         justify-content: center;
         width: 100%;
-        max-width: 800px;
+        max-width: 1000px;
         padding: 15px;
         background-color: white;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         margin: 20px auto;
+        margin-top: 40px;
     }
-    .video-container video {
+
+    .video-container {
       width: 100%;
       height: auto;
       border-radius: 10px;
     }
-    .dashboard-app {
-        flex-grow: 1; /* Ensure it takes the available space */
-        padding-bottom: 60px; /* Space for the footer */
+
+    .container div h3 {
+      font-size: 3rem;
+      font-weight: 700;
+      color: #031e31;
+      text-align: center;
     }
-    footer {
-        position: fixed;
-        bottom: 0;
-        width: 100%;
-        background-color: #f8f9fa;
-        padding: 10px 0;
-        text-align: center;
-        box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
-      }
+
+    .dashboard-app {
+        flex-grow: 1; 
+        padding-bottom: 60px; 
+    }
     </style>
   </head>
   <body>
     <!-- Dashboard -->
 
     <div class="dashboard">
+
       <div class="dashboard-nav">
         <header>
           <a href="#!" class="menu-toggle">
@@ -94,6 +96,7 @@
           </a>
         </nav>
       </div>
+
       <div class="dashboard-app">
         <div class="d-flex justify-content-between">
           <header class="dashboard-toolbar d-flex justify-content-between">
@@ -123,33 +126,34 @@
           </header>
         </div>
       </div>
-      <div class="video-container">
-        <video controls>
-            <source src="your-video-file.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
-     </div>
+
+      <div class="container">
+        <div>
+          <h3 style="border: 1rem solid #031e31; border-radius: 10px; background-color: rgb(62, 188, 167);">JavaScript Operators</h3>
+        </div>
+        <div class="video-container">
+          <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/lsV8JQgSW1s?si=pNdfr7IRSHljzgIb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+      </div>
+      
     </div>
+    
      
 
-   <footer style="position: fixed;">
+   <footer>
     <div class="container">
         <span> &copy; 2024 E-Learning </span> <p> All rights reserved.</p>
     </div>
    </footer>
 
 
-     <!-- Bootstrap JS, Popper.js, and jQuery -->
+     <!-- Bootstrap JS and jQuery -->
      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
      <!-- Prism.js JS -->
      <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.23.0/prism.min.js"></script>
-     <script>
-         document.getElementById("myButton").addEventListener("click", function() {
-             document.getElementById("myText").innerHTML = "Button Clicked!";
-         });
-     </script>
      <script src="../script.js"></script>
+
+     
   </body>
 </html>
