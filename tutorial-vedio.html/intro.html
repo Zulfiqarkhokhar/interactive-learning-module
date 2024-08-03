@@ -36,12 +36,79 @@
       font-weight: 700;
       color: #031e31;
       text-align: center;
+      border: 18px solid #031e31; 
     }
 
     .dashboard-app {
         flex-grow: 1; 
         padding-bottom: 60px; 
     }
+    
+    @media (max-width: 1660px) {
+        .container div h3 {
+          font-size: 3rem;
+          border: 20px solid #031e31;
+        }
+
+        .video-container iframe {
+          height: 500px;
+        }
+      }
+
+    @media (max-width: 1220px) {
+        .container div h3 {
+          font-size: 2.5rem;
+          border: 16px solid #031e31;
+        }
+
+        .video-container iframe {
+          height: 450px;
+        }
+      }
+
+      @media (max-width: 989px) {
+        .container div h3 {
+          font-size: 2.5rem;
+          border: 14px solid #031e31;
+        }
+
+        .video-container iframe {
+          height: 400px;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .container div h3 {
+          font-size: 2rem;
+          border: 12px solid #031e31;
+        }
+
+        .video-container iframe {
+          height: 300px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        .container div h3 {
+          font-size: 1.5rem;
+          border: 10px solid #031e31;
+        }
+
+        .video-container iframe {
+          height: 250px;
+        }
+      }
+
+      @media (max-width: 352px) {
+        .container div h3 {
+          font-size: 1.2rem;
+          border: 6px solid #031e31;
+        }
+
+        .video-container iframe {
+          height: 200px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -129,7 +196,7 @@
 
       <div class="container">
         <div>
-          <h3 style="border: 1rem solid #031e31; border-radius: 10px; background-color: rgb(62, 188, 167);" >Introduction Of JavaScript</h3>
+          <h3 style="border-radius: 10px; background-color: rgb(62, 188, 167);" >Introduction Of JavaScript</h3>
         </div>
         <div class="video-container">
           <iframe width="1000px" height="500px" src="https://www.youtube.com/embed/ER9SspLe4Hg?si=Opyb-kQxBERqN40X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -138,13 +205,6 @@
       
     </div>
     
-     
-
-   <footer>
-    <div class="container">
-        <span> &copy; 2024 E-Learning </span> <p> All rights reserved.</p>
-    </div>
-   </footer>
 
 
      <!-- Bootstrap JS and jQuery -->
