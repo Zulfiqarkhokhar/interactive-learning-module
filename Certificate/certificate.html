@@ -1,0 +1,58 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="certificate.css">
+    <link rel="favicon" href="favicon.ico">
+    <title>Certificate</title>
+</head>
+
+<body>
+          <!-- header -->
+    <header>
+        <img src="./web3gle.jfif" alt="web3gle">
+        <h5>Get your Cetificate</h5>
+        <h1> <a href="https://www.linkedin.com/company/web3gle/" target="_blank"
+            rel="noopener noreferrer">Web3gle</a></h1>
+            <iframe id="pdf" style="display: none;"></iframe>
+    </header>
+
+            <!-- End header -->`     
+             
+             <!-- Main -->`     
+             
+    <main>
+        <label for="name">Type Your Name</label>
+        <input required type="text" name="Name" autocomplete="name" placeholder="Your Name" id="name" minlength="3"
+            maxlength="16">
+        <Button id="submitBtn" aria-label="Get Certificate">Get Certificate</Button>
+    </main>
+
+             <!-- End Main -->`    
+              
+             
+
+
+
+
+
+
+
+             
+     <script src="https://unpkg.com/@pdf-lib/fontkit/dist/fontkit.umd.min.js"></script>
+
+    <script src="./fileSaver.js"></script>
+    <script src="https://unpkg.com/pdf-lib/dist/pdf-lib.min.js"></script>
+    <script src="./certificate.js"></script>
+         
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../bootstrap.bundle.js"></script>
+    <script src="../script.js"></script>
+
+    
+</body>
+
+</html>
