@@ -32,32 +32,27 @@ function selectOption(selectedOptionIndex) {
   console.log(currentQuestion.options[selectedOptionIndex]);
 
   if (currentQuestion.answer === currentQuestion.options[selectedOptionIndex]) {
-    // Correct answer, proceed to the next question
     currentQuestionIndex++;
     if (currentQuestionIndex < currentSection.questions.length) {
       loadQuestion();
     } else {
-      // Section completed
       alert("Section completed!");
-      currentSectionIndex++; // Move to the next section
+      currentSectionIndex++;
       if (currentSectionIndex < quizData.length) {
-        currentQuestionIndex = 0; // Reset question index for the new section
+        currentQuestionIndex = 0;
         localStorage.setItem("currentSectionIndex", currentSectionIndex);
         localStorage.setItem("currentQuestionIndex", currentQuestionIndex);
         loadQuestion();
       } else {
-        // All sections completed
         alert("Quiz completed!");
-        window.location.href = "./index.html"; // Redirect to Introduction page
+        window.location.href = "./index.html";
       }
     }
   } else {
-    // Incorrect answer
     alert("Incorrect, try again!");
   }
 }
 
-// Handle 'Next' button click
 document.getElementById("next-button").onclick = () => {
   currentQuestionIndex++;
   if (currentQuestionIndex < quizData[0].questions.length) {
@@ -72,12 +67,11 @@ document.getElementById("next-button").onclick = () => {
       loadQuestion();
     } else {
       alert("Quiz completed!");
-      window.location.href = "./index.html"; // Redirect to Introduction page
+      window.location.href = "./index.html";
     }
   }
 };
 
-// Load the state from localStorage or set defaults
 window.onload = () => {
   const savedSectionIndex = localStorage.getItem("currentSectionIndex");
   const savedQuestionIndex = localStorage.getItem("currentQuestionIndex");
